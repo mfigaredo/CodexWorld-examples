@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert HTML to PDF using JavaScript</title>
+    <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <button id="btnPDF" class="btn btn-success pull-right">Create PDF</button>
+
+        </div>
+        <div id="content">
+            <!-- HTML content goes here -->
+            <h2>This is H2 text</h2>
+            <p>A paragraph here...</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Head 1</th>
+                        <th>Head 2</th>
+                        <th>Head 3</th>
+                                                
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ABC</td>
+                            <td>DEF</td>
+                            <td>GHI</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+        <div id="elementH"></div>
+    </div>
+        
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
