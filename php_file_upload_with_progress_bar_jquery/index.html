@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP File Upload with Progress Bar</title>
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-div">
+            <h4>PHP File Upload with Progress Bar</h4>
+            <div class="row">
+                <!-- File upload form -->
+                <form id="uploadForm" enctype="multipart/form-data" class="form-inline">
+                    <label>Choose File:</label>
+                    <input type="file" name="file" id="fileInput" class="form-control">
+                    <input type="submit" name="submit" value="UPLOAD" class="btn btn-success"/>
+                </form>  
+            </div>
+            <div class="row">
+                
+                <!-- Progress bar -->
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>  
+            </div>
+            <div class="row">
+                <!-- Display upload status -->
+                <div id="uploadStatus"></div>
+            
+            </div>
+        </div>
+    </div>   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
